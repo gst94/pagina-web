@@ -106,10 +106,10 @@
 										<li><a href="#header"><i class="fa fa-plus"></i></a></li>
 									</ul>
 									<ul class="social">
-										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-										<li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
-										<li><a href="#"><i class="fa fa-google"></i></a></li>
+										<li><a href="https://www.facebook.com/gabriel.tercero.54"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="https://twitter.com/94_gst"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="https://api.whatsapp.com/send?phone=+543886569167"><i class="fa fa-whatsapp"></i></a></li>
+										<li><a href="https://m.me/gabriel.tercero.54"><i class="fa fa-comments-o"></i></a></li>
 									</ul>
 								</div>
 							</nav>
@@ -205,10 +205,10 @@
 												</div>
 												<div class="social">
 													<ul>
-														<li><a href="#"><i class="fa fa-facebook"></i></a><li>
-														<li><a href="#"><i class="fa fa-twitter"></i></a><li>
-														<li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
-														<li><a href="#"><i class="fa fa-google"></i></a></li>
+														<li><a href="https://www.facebook.com/gabriel.tercero.54/"><i class="fa fa-facebook"></i></a><li>
+														<li><a href="https://twitter.com/94_gst"><i class="fa fa-twitter"></i></a><li>
+														<li><a href="https://api.whatsapp.com/send?phone=+543886569167"><i class="fa fa-whatsapp"></i></a></li>
+														<li><a href="https://m.me/gabriel.tercero.54"><i class="fa fa-comments-o"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -662,7 +662,7 @@
 								<li>24/7 Soporte Tecnico</li>
 								<li>Mini cambios en Sitio Web</li>
 								<li>Cuenta de correo electrónico ilimitada</li>
-								<li class="cross">Espacio del disco</li>
+								<li class="cross">Espacio del disco limitado</li>
 							</ul>
 							<!-- Table Bottom -->
 							<div class="table-bottom">
@@ -688,7 +688,7 @@
 								<li>24/7 Soporte Tecnico</li>
 								<li>Mini cambios en Sitio Web</li>
 								<li>Cuenta de correo electrónico ilimitada</li>
-								<li class="cross">Espacio del disco</li>
+								<li class="cross">Espacio del disco ilimitado</li>
 							</ul>
 							<!-- Table Bottom -->
 							<div class="table-bottom">
@@ -719,7 +719,7 @@
 								<li>24/7 Soporte Tecnico</li>
 								<li>Mini cambios en Sitio Web</li>
 								<li>Cuenta de correo electrónico ilimitada</li>
-								<li class="cross">Espacio del disco</li>
+								<li class="cross">Espacio del disco ilimitado</li>
 							</ul>
 							<!-- Table Bottom -->
 							<div class="table-bottom">
@@ -821,13 +821,13 @@
 							<h1><span>Contactame</span><i class="fa fa-star"></i></h1>
 							<!--/ Start Social -->
 							<br>
-							<a href="#"><i class="fa fa-facebook" style="font-size: 36px; color:rgb(65, 65, 65)"></i></a>
+							<a href="https://www.facebook.com/gabriel.tercero.54/"><i class="fa fa-facebook" style="font-size: 36px; color:rgb(65, 65, 65)"></i></a>
 							<a><i class="fa fa-facebook" style="font-size: 36px; color:rgb(255, 255, 255)"></i></a>
-							<a href="#"><i class="fa fa-twitter" style="font-size: 36px; color:rgb(65, 65, 65)"></i></a>
+							<a href="https://twitter.com/94_gst"><i class="fa fa-twitter" style="font-size: 36px; color:rgb(65, 65, 65)"></i></a>
 							<a><i class="fa fa-facebook" style="font-size: 36px; color:rgb(255, 255, 255)"></i></a>
-							<a href="#"><i class="fa fa-whatsapp" style="font-size: 36px; color:rgb(65, 65, 65)"></i></a>
+							<a href="https://api.whatsapp.com/send?phone=+543886569167"><i class="fa fa-whatsapp" style="font-size: 36px; color:rgb(65, 65, 65)"></i></a>
 							<a><i class="fa fa-facebook" style="font-size: 36px; color:rgb(255, 255, 255)"></i></a>
-							<a href="#"><i class="fa fa-google" style="font-size: 36px; color:rgb(65, 65, 65)"></i></a>
+							<a href="https://m.me/gabriel.tercero.54"><i class="fa fa-comments-o" style="font-size: 36px; color:rgb(65, 65, 65)"></i></a>
 							
 								<!--/ End Social -->
 							</div>
@@ -839,21 +839,21 @@
 				<div class="row">
 					<!-- Contact Form -->
 					<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-delay="0.4s">
-						<form class="form" method="post" action="mail/mail.php">
+						<form class="form" name="contacto" method="POST" netlify action="/send.html">
 							<div class="row">
 								<div class="col-md-6">
 									<div class="form-group">
-										<input type="text" name="name" placeholder="Nombre Completo" required="required">
+										<input type="text" id="name" name="name" placeholder="Nombre Completo" onkeypress="return soloLetras(event)" required>
 									</div>
 								</div>
 								<div class="col-md-6">
 									<div class="form-group">
-										<input type="email" name="email" placeholder="Tu correo" required="required">
+										<input type="email" id="mail" name="email" placeholder="Tu correo" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" required>
 									</div>
 								</div>
 								<div class="col-md-12">
 									<div class="form-group">
-										<textarea name="message" rows="6" placeholder="Escribe tu mensaje aquí" ></textarea>
+										<textarea id="message" name="message" rows="6" placeholder="Escribe tu mensaje aquí" required></textarea>
 									</div>
 								</div>
 								<div class="col-md-12">
@@ -965,10 +965,10 @@
 					<div class="col-md-6 col-sm-6 col-xs-12">
 						<!-- Social -->
 						<ul class="social">
-							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-							<li class="active"><a href="#"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
-							<li><a href="#"><i class="fa fa-google"></i></a></li>
+							<li><a href="https://www.facebook.com/gabriel.tercero.54"><i class="fa fa-facebook"></i></a></li>
+							<li class="active"><a href="https://twitter.com/94_gst"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="https://api.whatsapp.com/send?phone=+543886569167"><i class="fa fa-whatsapp"></i></a></li>
+							<li><a href="https://m.me/gabriel.tercero.54"><i class="fa fa-comments-o"></i></a></li>
 						</ul>
 						<!--/ End Social -->
 					</div>
@@ -1025,5 +1025,27 @@
 		
 		<!-- Main JS -->
 		<script type="text/javascript" src="js/main.js"></script>
+
+		<!-- Solo letra en Nombre Completo formulario -->
+		<script>
+			function soloLetras(e) {
+			  var key = e.keyCode || e.which,
+				tecla = String.fromCharCode(key).toLowerCase(),
+				letras = " áéíóúabcdefghijklmnñopqrstuvwxyz",
+				especiales = [8, 37, 39, 46],
+				tecla_especial = false;
+		  
+			  for (var i in especiales) {
+				if (key == especiales[i]) {
+				  tecla_especial = true;
+				  break;
+				}
+			  }
+		  
+			  if (letras.indexOf(tecla) == -1 && !tecla_especial) {
+				return false;
+			  }
+			}
+		  </script>
     </body>
 </html>

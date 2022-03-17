@@ -2755,3 +2755,30 @@ Footer Top CSS
 /*=======================
   End Footer
 =========================*/
+
+/*=======================
+  Fondo web portfolio CSS
+=========================*/
+.bg {
+	animation:slide 3s ease-in-out infinite alternate;
+	background-image: linear-gradient(-0deg, #ff814C 65%, rgb(36, 36, 36) 50%);
+	bottom:0;
+	left:-50%;
+	position:fixed;
+	right:-50%;
+	top:0;
+	z-index:-1;
+  }
+  
+  .bg2 {
+	animation-direction:alternate-reverse;
+	animation-duration:4s;
+  }
+  
+  .bg3 {
+	animation-duration:5s;
+  }
+
+  /*=======================
+  End Fondo web portfolio CSS
+=========================*/
